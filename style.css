@@ -63,6 +63,34 @@ header {
   grid-template-rows: 1fr 1fr;
   background-color: var(--bg-light);
   box-shadow: 0px 8px 8px var(--shadow);
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 48px;
+  }
+}
+
+#search {
+  width: 35em;
+  border: 2px solid var(--secondary);
+  border-radius: 50px;
+  background-color: hsl(240 9% 85%);
+  color: black;
+  padding: 10px 12px;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+button {
+  padding: 18px 32px;
+  margin: 0 24px;
+  background-color: var(--primary);
+  border-radius: 50px;
 }
 
 #sidebar {
