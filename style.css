@@ -44,6 +44,11 @@ h2 {
   font-weight: 800;
 }
 
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
 h2 + h2 {
   margin-top: 8px;
 }
@@ -112,4 +117,40 @@ button {
   grid-column: 2;
   display: grid;
   grid-template-columns: 2.5fr 1fr;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+#projects,
+#info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 24px;
+}
+
+#projects {
+  grid-column: 1;
+}
+
+.project {
+  display: grid;
+  grid-template-rows: min-content min-content 48px;
+  padding: 12px;
+  border-left: 10px solid var(--warning);
+  border-top: 1px solid white;
+  border-right: 1px solid grey;
+  border-radius: 12px;
+  box-shadow: 4px 4px 4px var(--shadow);
+  background-color: var(--secondary);
+  width: 500px;
+  color: black;
+}
+
+#info {
+  grid-column: 2;
 }
