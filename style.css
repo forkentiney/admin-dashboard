@@ -53,6 +53,10 @@ h2 + h2 {
   margin-top: 8px;
 }
 
+h4 {
+  font-weight: 900;
+}
+
 #viewport {
   min-height: 100vh;
   display: grid;
@@ -137,20 +141,53 @@ button {
   grid-column: 1;
 }
 
-.project {
+.project,
+.tile {
   display: grid;
-  grid-template-rows: min-content min-content 48px;
   padding: 12px;
-  border-left: 10px solid var(--warning);
-  border-top: 1px solid white;
-  border-right: 1px solid grey;
   border-radius: 12px;
   box-shadow: 4px 4px 4px var(--shadow);
   background-color: var(--secondary);
-  width: 500px;
   color: black;
+  gap: 16px;
+}
+
+.project {
+  grid-template-rows: min-content min-content 48px;
+  border-left: 10px solid var(--warning);
+  border-top: 1px solid white;
+  border-right: 1px solid grey;
+  width: 510px;
 }
 
 #info {
   grid-column: 2;
+}
+
+#announcements {
+  margin-bottom: 8px;
+}
+
+.announcement {
+  font-size: 95%;
+}
+
+.trend {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 16px;
+  div {
+    display: grid;
+    grid-template-columns: 1fr;
+    p + p {
+      color: gray;
+    }
+  }
+}
+
+.profile {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
 }
